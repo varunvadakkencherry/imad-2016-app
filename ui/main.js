@@ -4,5 +4,5 @@ element.innerHTML ="New HTML";
 //move image
 var img = document.getElementById('img');
 img.onClick = function(){
-    alert("Hi");
+    img.style.marginLeft = '100px';
 };
