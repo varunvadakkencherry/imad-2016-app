@@ -25,7 +25,7 @@ function myFunction() {
 var nameInput = document.getElementById("name");
 var nam = nameInput.value;
 var submit = document.getElementById("submit_btn");
-submit.onClick = function(){
+function smtFunction(){
     var names = ['Name1', 'Name2', 'Name3', 'Name4'];
     var list = '';
     for (var i = 0; i < names.length; i++)
@@ -34,4 +34,4 @@ submit.onClick = function(){
     }
     var ul = document.getElementById('namelist');
     ul.innerHTML = list;
-};
+}
