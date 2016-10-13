@@ -1,4 +1,3 @@
-var btn = document.getElementById('counter');
-btn.onClick = function(){
-    alert("Test");
-};
+function myFunction() {
+    alert("I am an alert box!");
+}
