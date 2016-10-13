@@ -10,11 +10,11 @@ function myFunction() {
        {
             if(rqst.status === 200){
                 var counter = request.responseText;
-            };
-       };
+            }
+       }
    };
    
    // Make a request
    rqst.open('GET', 'http://varunvadakkencherry.imad.hasura-app.io/counter',true );
    rqst.send(null);
-};
+}
