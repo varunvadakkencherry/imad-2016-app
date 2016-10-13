@@ -1,9 +1,8 @@
-console.log('Loaded!');
-var element = document.getElementById("main-text");
-element.innerHTML ="New HTML";
-//move image
-var img = document.getElementById("madi");
-img.onClick = function(){
-    //img.style.marginLeft = "100px";
-    alert("Hi I am Javascrpt code!");
+//Counter code
+var button = document.GetElementById('counter');
+var counter = 0;
+button.onClick = function(){
+    counter = counter + 1;
+    var span = document.getElementById('count');
+    span.innerHtml = counter.toString();
 };
