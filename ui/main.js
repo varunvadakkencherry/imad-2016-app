@@ -4,17 +4,20 @@ function myFunction() {
    // spn.innerHTML = counter.toString();
    
    // Create a request
-   var rqst = new XMLHttpRequest();
-   rqst.onreadystatechange = function(){
-       if (rqst.readyState === XMLHttpRequest.DONE)
+   var request = new XMLHttpRequest();
+   
+   request.onreadystatechange = function(){
+       if (request.readyState === XMLHttpRequest.DONE)
        {
-            if(rqst.status === 200){
+            if(request.status === 200){
                 var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
             }
        }
    };
    
    // Make a request
-   rqst.open('GET', 'http://varunvadakkencherry.imad.hasura-app.io/counter',true );
-   rqst.send(null);
+   request.open('GET', 'http://varunvadakkencherry.imad.hasura-app.io/counter',true );
+   request.send(null);
 }
