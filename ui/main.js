@@ -23,7 +23,7 @@ function myFunction() {
 }
 
 var nameInput = document.getElementById("name");
-var name = nameInput.value;
+var nam = nameInput.value;
 var submit = document.getElementById("submit_btn");
 submit.onClick = function(){
     var names = ['Name1', 'Name2, 'Name3'];
